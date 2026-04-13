@@ -33,4 +33,10 @@ public class TodoRepositoryImpl implements TodoRepository, PanacheRepositoryBase
         }
         return response;
     }
+
+    @Override
+    @Transactional
+    public boolean deleteById(UUID id) {
+        return deleteById(id);
+    }
 }
